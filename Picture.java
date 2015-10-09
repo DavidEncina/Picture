@@ -17,6 +17,9 @@ public class Picture
     private Circle sun;
     private Square campo;
     private Person persona;
+    private Person persona2;
+    private Person persona3;
+    private Person persona4;
 
     /**
      * Constructor for objects of class Picture
@@ -92,8 +95,33 @@ public class Picture
             persona.slowMoveHorizontal(50);
         }
     }
-
-   
+    
+    public void morePeople()
+    {
+        {
+            persona2 = new Person();
+            persona3 = new Person();
+            persona4 = new Person();
+            persona2.makeVisible();          
+            persona2.moveVertical(70);
+            persona2.moveHorizontal(70);
+            persona3.makeVisible();          
+            persona3.moveVertical(70);
+            persona4.makeVisible();          
+            persona4.moveHorizontal(100);            
+        }
+    }
+    
+    public void peopleMovig()
+    {
+        if (persona2 != null && persona3 != null && persona4 != null)
+        {
+            persona2.slowMoveVertical(30);
+            persona3.slowMoveVertical(30);
+            persona4.slowMoveHorizontal(30);
+        }
+    }
+    
     /**
      * Change this picture to black/white display
      */
