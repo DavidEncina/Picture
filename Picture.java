@@ -50,7 +50,7 @@ public class Picture
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("blue");
+        sun.changeColor("yellow");
         sun.moveHorizontal(100);
         sun.moveVertical(-40);
         sun.changeSize(80);
@@ -61,7 +61,8 @@ public class Picture
         campo.moveHorizontal(-400);
         campo.moveVertical(100);
         campo.changeSize(1000);
-        campo.makeVisible();
+        campo.makeVisible();      
+      
     }
 
     /**
